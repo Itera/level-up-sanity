@@ -1,9 +1,8 @@
-# Sanity Clean Content Studio
+# Sanity Content Studio for storing data in LevelUp
 
-Congratulations, you have now installed the Sanity Content Studio, an open source real-time content editing environment connected to the Sanity backend.
+Using this project requires permissions given through [sanity.io](sanity.io) by Lars Erik Røise
 
-Now you can do the following things:
+The project can be run locally by running `sanity start`
 
+Official documentation of sanity begins here:
 - [Read “getting started” in the docs](https://www.sanity.io/docs/introduction/getting-started?utm_source=readme)
-- [Join the community Slack](https://slack.sanity.io/?utm_source=readme)
-- [Extend and build plugins](https://www.sanity.io/docs/content-studio/extending?utm_source=readme)
