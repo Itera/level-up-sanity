@@ -1,17 +1,22 @@
 export default {
   title: "Person",
-
   name: "person",
-
   type: "document",
-
   fields: [
     {
       title: "Name",
-
       name: "name",
-
       type: "string",
     },
+    {
+      title: "Image",
+      name: "image",
+      type: "image",
+    },
+    {
+      title: "Email",
+      name: "email",
+      type: "string",
+    }
   ],
 };

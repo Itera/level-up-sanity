@@ -1,67 +1,49 @@
 export default {
   title: "Practice",
-
   name: "practice",
-
   type: "document",
-
   fields: [
     {
       title: "Name",
-
       name: "name",
-
       type: "string",
     },
     {
       title: "Practice Lead",
-
       name: "lead",
-
       type: "reference",
-
-      to: [{ type: "person" }],
+      weak: false,
+      to: [{ type: 'person' }],
     },
     {
-      title: "Image",
-
-      name: "image",
-
-      type: "image",
+      title: 'Summary', 
+      name: 'summary',
+      type: 'array', 
+      of: [{type: 'block'}]
+    },
+    {
+      title: "Slack channels",
+      name: "slacks",
+      type: "array",
+      of: [{type: 'string'}]
+    },
+    {
+      title: "Visualized / Overview",
+      name: "imagePractice",
+      type: "image" 
+    },
+    {
+      title: 'Main Areas', 
+      name: 'mainAreas',
+      type: 'array', 
+      of: [{type: 'mainArea'}]
     },
     {
       title: "Relevant Links",
-
       name: "links",
-
       type: "array",
-
-      of: [
-        {
-          title: "Link",
-
-          name: "link",
-
-          type: "object",
-
-          fields: [
-            {
-              title: "Name",
-
-              name: "name",
-
-              type: "string",
-            },
-            {
-              url: "URL",
-
-              name: "url",
-
-              type: "url",
-            },
-          ],
-        },
-      ],
-    },
-  ],
+      validation: Rule => Rule.unique().error('Link must be unique!'),
+      of: [{type: 'link'}]
+     }
+  ]
 };
