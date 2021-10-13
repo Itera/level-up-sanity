@@ -45,7 +45,7 @@ Log in to Sanity with:
 
 Run the following command to start Sanity Studio locally:
 
-`sanity start`.
+`sanity start`
 
 Sanity Studio will then be run on `http://localhost:3333` by default.
 
