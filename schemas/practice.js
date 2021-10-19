@@ -9,6 +9,11 @@ export default {
       type: "string",
     },
     {
+      title: "Sponsor",
+      name: "sponsor",
+      type: "string",
+    },
+    {
       title: "Practice Lead",
       name: "lead",
       type: "reference",
@@ -44,6 +49,12 @@ export default {
       type: "array",
       validation: Rule => Rule.unique().error('Link must be unique!'),
       of: [{type: 'link'}]
-     }
+     },
+     {
+      title: "To do",
+      name: "toDo",
+      type: "array",
+      of: [{type: 'string'}]
+    },
   ]
 };

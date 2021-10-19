@@ -15,6 +15,12 @@ export default {
         of: [{type: 'block'}]
       },
       {
+        title: "Video",
+        name: "video",
+        type: "file",
+        accept: "video/*,audio/*"
+      },
+      {
         title: 'Visualized / Overview', 
         name: 'vizualized',
         type: 'array',
@@ -76,8 +82,8 @@ export default {
         of: [{type: 'certify'}]
       },
       {
-        title: 'Contacts / Who to ask',
-        name: 'contacts',
+        title: 'Experts / Who to ask',
+        name: 'experts',
         type: 'array',
         of: [{ type: 'string' }]
       },

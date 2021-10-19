@@ -13,6 +13,6 @@ export default {
             name: "fileName",
             type: "file",
             accept: ".doc,.docx,.pdf,.xls,video/*,audio/*"
-        }
+        } 
     ]
   }
