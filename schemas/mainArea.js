@@ -40,10 +40,34 @@ export default {
         of: [{type: 'link'}]
       },
       {
+        title: 'Keywords',
+        name: 'keywords',
+        type: 'array',
+        of: [{ type: 'string' }],
+        options: {
+          layout: 'tags'
+        }
+      },
+      {
         title: 'Trend / Future / Vision', 
         name: 'trend',
         type: 'array',
         of: [{type: 'block'}]
       },
+      {
+        title: 'Departments',
+        name: 'departments',
+        type: 'array',
+        of: [{type: 'string'}],
+        options: {
+          list: [
+            {title: 'All', value: '*'},
+            {title: 'Norway', value: 'NO'},
+            {title: 'Denmark', value: 'DK'},
+            {title: 'Ukrania', value: 'UA'},
+            {title: 'Slovakia', value: 'SK'}
+          ]
+        }
+      }
     ]
   };

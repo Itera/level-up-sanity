@@ -12,8 +12,7 @@ import certify from "./certify";
 import mainArea from "./mainArea";
 
 import term from "./term";
-import domain from "./domain";
-import group from "./group";
+
 
 export default createSchema({
   name: "levelUp",
